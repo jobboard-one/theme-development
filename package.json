@@ -1,0 +1,23 @@
+{
+  "name": "jobboard-one-theme-development",
+  "version": "1.0.0",
+  "description": "The html structure for the jobboards from jobboard.one",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js"
+  },
+  "keywords": [
+    "jobboard",
+    "jobboard.one",
+    "template"
+  ],
+  "author": "Benjamin Kowalski",
+  "license": "MIT",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "node-sass": "^4.14.1",
+    "node-static": "^0.7.11",
+    "socket.io": "^2.3.0"
+  }
+}

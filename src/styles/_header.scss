@@ -1,0 +1,133 @@
+.main-header {
+	position: sticky;
+	top:0;
+	left:0;
+	width:100%;
+	height:48px;
+	background:#FFF;
+	box-shadow:0 1px 2px rgba(0, 0, 0, .1), 0 4px 12px rgba(0, 0, 0, .1);
+	z-index:100;
+}
+
+.main-header__inner {
+	display: flex;
+	justify-content: space-between;
+	max-width: 780px;
+	margin:0 auto;
+}
+
+.main-header__logo-link {
+
+}
+
+.main-header__logo {
+	width:auto;
+	height:48px;
+}
+
+.main-header__nav-button {
+
+}
+
+.main-header__nav-button {
+	-webkit-appearance:none;
+	background:#EEE;
+	padding:0 12px;
+	line-height: 36px;
+	border:0;
+	height:36px;
+	margin:6px;
+	border-radius: 6px;
+	background:var(--color-grey-98);
+	font-size:11px;
+	color:var(--color-grey-40);
+	outline:none;
+
+	@include breakpoint($tablet) {
+		display:none;
+	}
+}
+
+.main-header__nav-button-symbol {
+	fill:var(--color-grey-40);
+	display:inline-block;
+	vertical-align: baseline;
+	transform: translateY(2px);
+}
+
+.main-header__shadow {
+	content:'';
+	position: fixed;
+	top:48px;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0, 0, 0, .5);
+	z-index:100;
+	display:none;
+}
+
+.main-header__shadow--visible {
+	display:block;
+
+	@include breakpoint($tablet) {
+		display:none;
+	}
+}
+
+.main-header__nav {
+    position: absolute;
+    top: 54px;
+    left: 6px;
+    right:6px;
+    background: #FFF;
+    padding:6px;
+	display: none;
+	border-radius: 6px;
+	z-index:100;
+
+	@include breakpoint($tablet) {
+		position: static;
+		background: transparent;
+		display:block;
+		border-radius: 0;
+		padding:0;
+	}
+}
+
+.main-header__nav--opened {
+	display:block;
+}
+
+.main-header__nav-list {
+	display:flex;
+	flex-direction: column;
+	margin:0;
+
+	@include breakpoint($tablet) {
+		flex-direction: row;
+	}
+}
+
+.main-header__nav-item {
+
+}
+
+.main-header__nav-link {
+	display:block;
+	padding:0 9px;
+	font-size:13px;
+	line-height:36px;
+	color:var(--color-grey-60);
+	text-decoration: none;
+	transition: all 160ms ease;
+
+	@include breakpoint($tablet) {
+		line-height:48px;
+	}
+}
+
+.main-header__nav-link:hover {
+	color:var(--color-blue);
+	background:rgba(0, 0, 0, .05);
+}

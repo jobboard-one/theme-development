@@ -1,0 +1,14 @@
+.back {
+
+}
+
+.back__inner {
+	max-width: 780px;
+	margin:0 auto;
+	padding:24px 12px 24px 0;
+	text-align: left;
+
+	@include breakpoint($tablet) {
+		padding:24px 12px 24px 0;
+	}
+}
